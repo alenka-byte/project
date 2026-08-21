@@ -1,4 +1,4 @@
-# Проект **Тестовое приложение с кеширующим слоем**
+# Проект "Тестовое приложение с кеширующим слоем"
 
 ### **Задача**
 Необходимо развернуть тестовое приложение с кеширующим слоем.
@@ -18,7 +18,7 @@ https://github.com/alenka-byte/project
 ### **Результаты**
 
 1.    backend-api.service — **active (running)**.
-![[Pasted image 20260821184948.png]]
+<img src="Скриншоты/Pasted image 20260821184948.png">
 2.    proxy-api.service — **active (running)**.
 ![[Pasted image 20260821185007.png]]
 3.    PostgreSQL + SELECT COUNT(*) → **20**.
