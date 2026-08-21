@@ -1,0 +1,18 @@
+[Unit]
+Description=Proxy API Service
+After=network.target valkey.service
+Requires=valkey.service
+
+[Service]
+Type=simple
+User=proxy-api
+Group=proxy-api
+WorkingDirectory=/usr/local/bin
+ExecStart=/usr/bin/python3 /usr/local/bin/cache-api.py
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
