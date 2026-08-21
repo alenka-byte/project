@@ -1,0 +1,24 @@
+#!/bin/bash
+set -e
+
+# Создание пользователя
+if ! getent group backend-api >/dev/null; then
+    addgroup --system backend-api
+fi
+
+if ! getent passwd backend-api >/dev/null; then
+    adduser --system --no-create-home --home /nonexistent --ingroup backend-api backend-api
+fi
+
+# Создание конфигурационной директории
+mkdir -p /etc/backend-api
+cp /usr/share/backend-api/config-backend.yaml /etc/backend-api/
+
+# Настройка прав
+chown -R backend-api:backend-api /etc/backend-api
+
+# Настройка systemd
+systemctl daemon-reload
+systemctl enable backend-api.service || true
+
+exit 0

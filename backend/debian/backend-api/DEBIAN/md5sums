@@ -1,0 +1,4 @@
+4db531bb045707135e7f50419b8a5006  usr/bin/backend-api
+3b36f8cf1dae27eab7377d11eb2973fc  usr/lib/systemd/system/backend-api.service
+2ee08d5fd502dac0a95a47181d0277f0  usr/share/backend-api/config-backend.yaml
+bd2a6f8bc5246c4858f68401e61bbb71  usr/share/doc/backend-api/changelog.Debian.gz

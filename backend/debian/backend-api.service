@@ -1,0 +1,18 @@
+[Unit]
+Description=Backend API Service
+After=network.target postgresql.service
+Requires=postgresql.service
+
+[Service]
+Type=simple
+User=backend-api
+Group=backend-api
+WorkingDirectory=/usr/share/backend-api
+ExecStart=/usr/bin/backend-api
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

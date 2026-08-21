@@ -1,0 +1,10 @@
+Package: backend-api
+Version: 1.0.0-1
+Architecture: amd64
+Maintainer: Alena <alenkaivas6@gmail.com>
+Installed-Size: 5986
+Depends: libc6 (>= 2.34), postgresql-16
+Section: web
+Priority: optional
+Description: Backend API service
+ API service for user management with PostgreSQL backend

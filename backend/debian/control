@@ -1,0 +1,12 @@
+Source: backend-api
+Section: web
+Priority: optional
+Maintainer: Alena <alenkaivas6@gmail.com>
+Build-Depends: debhelper-compat (= 11), golang-go
+Standards-Version: 4.5.0
+
+Package: backend-api
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, postgresql-16
+Description: Backend API service
+ API service for user management with PostgreSQL backend

@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+%:
+	dh $@
+
+override_dh_auto_build:
+	go build -o backend-api backend-api.go
+
+override_dh_auto_install:
+	mkdir -p debian/backend-api/usr/bin
+	mkdir -p debian/backend-api/usr/share/backend-api
+	cp backend-api debian/backend-api/usr/bin/
+	cp config-backend.yaml debian/backend-api/usr/share/backend-api/
