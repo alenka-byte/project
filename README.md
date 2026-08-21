@@ -20,18 +20,18 @@ https://github.com/alenka-byte/project
 1.    backend-api.service — **active (running)**.
 <img src="Скриншоты/Pasted image 20260821184948.png">
 2.    proxy-api.service — **active (running)**.
-<img src="Pasted image 20260821185007.png">
+<img src="Скриншоты/Pasted image 20260821185007.png">
 3.    PostgreSQL + SELECT COUNT(*) → **20**.
-<img src="Pasted image 20260821185021.png">
-<img src="Pasted image 20260821185015.png">
+<img src="Скриншоты/Pasted image 20260821185021.png">
+<img src="Скриншоты/Pasted image 20260821185015.png">
 4.    Valkey → PONG.
-<img src="Pasted image 20260821185030.png">
-<img src="Pasted image 20260821185044.png">
+<img src="Скриншоты/Pasted image 20260821185030.png">
+<img src="Скриншоты/Pasted image 20260821185044.png">
 5.    Backend curl /user?id=5 → данные Charlie Davis.
-<img src="Pasted image 20260821185127.png">
+<img src="Скриншоты/Pasted image 20260821185127.png">
 6.    Proxy два curl подряд → cached=false **и** cached=true.
-<img src="Pasted image 20260821185136.png">
+<img src="Скриншоты/Pasted image 20260821185136.png">
 7.    iptables → разрешение Proxy → Backend.
-<img src="Pasted image 20260821185222.png">
-<img src="Pasted image 20260821185231.png">
+<img src="Скриншоты/Pasted image 20260821185222.png">
+<img src="Скриншоты/Pasted image 20260821185231.png">
 
